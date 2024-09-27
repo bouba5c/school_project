@@ -20,7 +20,6 @@ public class Game  implements Model {
     private boolean undoClicked;
     private boolean redoClicked;
     private int gameMode;
-    private int totalTakenPawn = 0;
     private boolean isPassed =false;
     private final List<Observer> observers;
     public Game()  {
@@ -82,11 +81,9 @@ public class Game  implements Model {
         }
         if (currentPlayerId == 1) {
             return checkIfPawnCanBePut(pawn, getPossibleBlackMoves(),getPossibleWhiteMoves());
-        } else if (currentPlayerId == 2)
-        {
+        } else if (currentPlayerId == 2) {
             return checkIfPawnCanBePut(pawn, getPossibleWhiteMoves(),getPossibleBlackMoves());
         }
-
         return false;
     }
     private boolean checkIfPawnCanBePut(Pawn pawn, List<Position> possibleMoves,List<Position> EnemyPossibleMoves) {
@@ -100,7 +97,6 @@ public class Game  implements Model {
         }
         return false;
     }
-
 
     private boolean pawnIsInside(Pawn pion)
     {
@@ -188,45 +184,30 @@ public class Game  implements Model {
             }
         }
     }
+
     private void takePawn(Pawn pion) {
         Objects.requireNonNull(pion,"pion requis");
         board.removePawn(pion);
     }
     @Override
     public void putPawn(Pawn pion)  {
-
-        if(!(getState().equals(State.PUT)))
+        if(!getState().equals(State.PUT))
         {
             throw new IllegalStateException("not put state");
-        }
-        if(board.wallCanBePut(pion))
-        {
-            setState(State.PUT_WALL);
         }
         if(!pawnCanBePut(pion))
         {
             throw new IllegalArgumentException("pion cannot be put");
         }
-
         board.put(pion);
         board.flipPawn(pion);
         puttedPionHistory.add(pion.getPosition());
-        totalTakenPawn += opponentPionHistory.size();
         changeStateWithAction(undoClicked,State.UNDO);
         changeStateWithAction(redoClicked,State.REDO);
         changeStateWithAction(getState().equals(State.GAME_OVER),State.GAME_OVER);
         setState(State.TURN_END);
     }
 
-    @Override
-    public void putWall(Pawn pawn) {
-        if(!(getState().equals(State.PUT_WALL) ||getState().equals(State.PUT)))
-        {
-            throw new IllegalStateException("error");
-        }
-        board.put(new Pawn(pawn.getPosition(),Color.MUR));
-        setState(State.TURN_END);
-    }
     private void computerPlay(int gameMode)  {
         List<Position> list = new ArrayList<>();
         if(currentPlayerId==1)
@@ -272,8 +253,6 @@ public class Game  implements Model {
         savedOponentTurnList.add(saveOpponentPion);
         savedOponentTurnList.removeIf(List::isEmpty);
         opponentPionHistory.clear();
-        update();
-
         computerPlay(gameMode);
         changeStateWithAction(getState().equals(State.GAME_OVER),State.GAME_OVER);
         setState(State.PUT);
@@ -298,7 +277,7 @@ public class Game  implements Model {
     @Override
     public int getBlackScore()
     {
-        return this.board.getBlackPawns().size() ;
+        return this.board.getBlackPawns().size();
     }
 
     private void initBoard()
@@ -341,7 +320,6 @@ public class Game  implements Model {
                 currentPossibleMoves ) {
             board.put(new Pawn(possibleMoves,Color.NONE));
         }
-
         enemyPossiblesMoves.clear();
     }
     private List<Position> getSavePuttedPawnForRedo() {
@@ -359,7 +337,6 @@ public class Game  implements Model {
         currentPlayerId = getCurrentPlayerId();
         otherPlayerColor = getOtherPlayerColor();
         this.currentPlayerColor = getCurrentPlayerColor();
-        totalTakenPawn = getTotalTakenPawn();
         if (getCurrentPlayerId() == 1)
         {
             updatePlayersElement(possibleBlackMoves,possibleWhiteMoves);
@@ -466,6 +443,7 @@ public class Game  implements Model {
             if(isPassed)
             {
                 currentPlayerId = (this.currentPlayerId == 2 ) ? 2 : 1;
+
             }
             currentPlayerId = (this.currentPlayerId == 1 ) ? 2 : 1;
         }
@@ -497,12 +475,5 @@ public class Game  implements Model {
             obs.update();
         }
     }
-
-    @Override
-    public int getTotalTakenPawn() {
-        return totalTakenPawn;
-    }
-
-
 
 }

@@ -3,13 +3,9 @@ import g55870.atl.othello.model.Model;
 import g55870.atl.othello.model.Observer;
 import g55870.atl.othello.model.State;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.GridPane;
 import javafx.scene.layout.StackPane;
-import javafx.scene.shape.Circle;
-
 import java.util.Objects;
 /**
  * The GameScene class represents the main scene of the Othello game.
@@ -23,7 +19,7 @@ public class GameScene extends Scene implements Observer
     private final BoardPane boardPane;
     private final PlayersInformation playersInformation;
     /**
-     * Constructs a GameScene object with the specified 8Model.
+     * Constructs a GameScene object with the specified Model.
      * @param model The Model containing game data.
      */
     public GameScene(Model model) {

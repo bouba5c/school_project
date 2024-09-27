@@ -5,7 +5,6 @@ package g55870.atl.othello.model;
 public enum Color {
     BLACK("\u001B[37mO\u001B[0m"),
     WHITE("O"),
-    MUR("M"),
 
     NONE("\u001B[36m°\u001B[0m");
 

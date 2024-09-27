@@ -26,8 +26,8 @@ public enum State {
     /**
      * Indicates that the game is over.
      */
-    PUT_WALL,
     GAME_OVER,
+
     /**
      * Indicates that the game is in the redo state.
      */

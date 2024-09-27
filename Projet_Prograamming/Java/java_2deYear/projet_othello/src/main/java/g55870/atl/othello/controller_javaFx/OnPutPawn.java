@@ -1,13 +1,11 @@
 package g55870.atl.othello.controller_javaFx;
 
-import g55870.atl.othello.model.Color;
 import g55870.atl.othello.view_javaFx.PopUp;
 import g55870.atl.othello.model.Pawn;
 import g55870.atl.othello.model.Position;
 import g55870.atl.othello.model.State;
 import g55870.atl.othello.view_javaFx.GameScene;
 import javafx.animation.PauseTransition;
-import javafx.scene.layout.GridPane;
 import javafx.util.Duration;
 
 import java.util.Objects;
@@ -37,12 +35,9 @@ public class OnPutPawn implements Command {
                     try{
                         gameScene.getModel().putPawn(new Pawn(new Position(finalI, finalJ), gameScene.getModel().getCurrentPlayerColor()));
                     }
+
                     catch (Exception ignored)
                     {
-                    }
-                    if (gameScene.getModel().getState().equals(State.PUT_WALL)) {
-                        gameScene.getModel().putWall(new Pawn(new Position(finalI, finalJ),Color.MUR));
-                        this.execute();
                     }
                     gameModePlay(gameScene.getModel().getGameMode());
                 });
@@ -56,25 +51,27 @@ public class OnPutPawn implements Command {
      */
     public void gameModePlay(int gameMode)
     {
-            if(gameMode==2 || gameMode==3)
+        if(gameMode==2 || gameMode==3)
+        {
+            PauseTransition pauseTransition = getPauseTransition();
+            pauseTransition.play();
+        }
+        else{
+            if(gameScene.getModel().getState().equals(State.TURN_END)) {
+                gameScene.getModel().nextPlayer();
+            }
+            if (gameScene.getModel().getState().equals(State.PUT)) {
+                this.execute();
+            }
+
+            else if(gameScene.getModel().getState().equals(State.GAME_OVER))
             {
-                PauseTransition pauseTransition = getPauseTransition();
-                pauseTransition.play();
+                PopUp.showInformation((gameScene.getModel().getWinner()==-1)? "match nul" : "Le vainqueur est le joueur :" +(gameScene.getModel().getWinner()) +
+                        "\n" +" joueur 1 : " +  gameScene.getModel().getBlackScore()  +" pions noirs" +
+                        "\n" +" joueur 2 : " + gameScene.getModel().getWhiteScore() + " pions blancs" );
             }
-            else{
-                if(gameScene.getModel().getState().equals(State.TURN_END)) {
-                    gameScene.getModel().nextPlayer();
-                }
-                if (gameScene.getModel().getState().equals(State.PUT)) {
-                    this.execute();
-                }
-                else if(gameScene.getModel().getState().equals(State.GAME_OVER))
-                {
-                    PopUp.showInformation((gameScene.getModel().getWinner()==-1)? "match nul" : "Le vainqueur est le joueur :" +(gameScene.getModel().getWinner()) +
-                            "\n" +" joueur 1 : " +  gameScene.getModel().getBlackScore()  +" pions noirs" +
-                            "\n" +" joueur 2 : " + gameScene.getModel().getWhiteScore() + " pions blancs" );
-                }
-            }
+        }
+
     }
     /**
      * Creates a PauseTransition to let the human player see the computer player's move

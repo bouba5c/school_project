@@ -52,7 +52,6 @@ public class Board {
         }
         return true;
     }
-
     /**
      * Puts a pawn on the board at the specified position.
      *
@@ -105,10 +104,6 @@ public class Board {
         return checkDiagonale(pawn) || checkColumn(pawn) || checkRow(pawn);
 
     }
-    public boolean wallCanBePut(Pawn pawn)
-    {
-        return tiles[pawn.getPosition().x()][pawn.getPosition().y()] == null;
-    }
     /**
      * Flips pawns in all directions .
      * @param pawn The pawn representing the move.
@@ -155,7 +150,7 @@ public class Board {
 
                 Position currentPosition = new Position(i, j);
                 Pawn blackPawn = new Pawn(currentPosition, Color.BLACK);
-                if (tiles[i][j] == null && checkPossibleMoves(blackPawn) ) {
+                if (tiles[i][j] == null && checkPossibleMoves(blackPawn)) {
                     possibleBlackMoves.add(currentPosition);
                 }
             }
@@ -365,7 +360,6 @@ public class Board {
             if (getTile(position) == null) {
                 return null;
             }
-
             return new Pawn(position, getTile(position).getColor());
         }
         return null;
@@ -389,22 +383,21 @@ public class Board {
     {
         int x = pawn.getPosition().x();
         int y = pawn.getPosition().y();
-        if(getDirectionPawn(pawn,dx,dy)==null || Objects.requireNonNull(getDirectionPawn(pawn, dx, dy)).getColor().equals(Color.MUR))
+        if(getDirectionPawn(pawn,dx,dy)==null)
         {
             return false;
         }
         int i = x + dx;
         int j = y + dy;
         boolean foundOpponent = false;
+
         while (i >= 0 && i < getSize() && j >= 0 && j < getSize()) {
             Pawn currentPawn = this.tiles[i][j];
 
-            if (currentPawn == null || currentPawn.getColor().equals(Color.NONE) ) {
+            if (currentPawn == null || currentPawn.getColor().equals(Color.NONE)) {
                 return false;
             }
-            if (currentPawn.getColor().equals(Color.MUR)) {
-                return false;
-            }
+
             if (currentPawn.getColor().equals(pawn.getColor())) {
                 return foundOpponent;
             } else {

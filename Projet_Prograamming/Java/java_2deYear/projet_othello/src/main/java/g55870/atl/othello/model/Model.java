@@ -52,7 +52,6 @@ public interface Model {
     * @param pawn the pawn to put on the board
     */
    void putPawn(Pawn pawn);
-   void putWall(Pawn pion);
     int getGameMode();
    /**
     * Moves to the next player's turn.
@@ -135,5 +134,4 @@ public interface Model {
     */
    void notifyObservers();
 
-   int getTotalTakenPawn();
 }

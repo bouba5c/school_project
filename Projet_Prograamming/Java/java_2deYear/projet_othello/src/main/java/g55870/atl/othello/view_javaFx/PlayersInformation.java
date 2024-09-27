@@ -14,10 +14,7 @@ import javafx.scene.text.Font;
 public class PlayersInformation extends HBox
 {
     private final Label blackScore;
-
     private final Label whiteScore;
-    private final Label totalTakenPawn;
-
     private final Model model;
     /**
      * Constructs a PlayersInformation object with the specified Model.
@@ -28,13 +25,11 @@ public class PlayersInformation extends HBox
         this.model = model;
         Label player1 =labelStyle(" joueur 1  : ",1,"black",Color.WHITE);
         blackScore = labelStyle(String.valueOf(model.getBlackScore()),2,"black",Color.WHITE);
-        Label totalTakenPawnLabel = labelStyle(" Total pion pris : ",1,"lightgreen",Color.GREEN);
-        totalTakenPawn =labelStyle(String.valueOf(model.getTotalTakenPawn()),1,"lightgreen",Color.GREEN);
         Label player2 =labelStyle(" joueur 2  : ",1,"white",Color.BLACK);
         whiteScore = labelStyle(String.valueOf(model.getWhiteScore()),2,"white",Color.BLACK);
         setAlignment(Pos.CENTER);
         setSpacing(3);
-        getChildren().addAll(player1,blackScore, player2,whiteScore,totalTakenPawnLabel,totalTakenPawn);
+        getChildren().addAll(player1,blackScore, player2,whiteScore);
     }
     /**
      * Creates a styled label with the specified parameters.
@@ -75,8 +70,6 @@ public class PlayersInformation extends HBox
     {
         blackScore.setText(String.valueOf(model.getBlackScore()));
         whiteScore.setText(String.valueOf(model.getWhiteScore()));
-        totalTakenPawn.setText(String.valueOf(model.getTotalTakenPawn()));
-
 
     }
 }

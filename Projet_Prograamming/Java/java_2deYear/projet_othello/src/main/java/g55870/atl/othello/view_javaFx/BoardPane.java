@@ -16,7 +16,6 @@ import java.util.Objects;
 public class BoardPane extends StackPane
 {
 
-
     private Button[][] buttons;
     private final Model model;
     private final GridPane gridPaneBoard;
@@ -50,6 +49,7 @@ public class BoardPane extends StackPane
             button.setShape(new Circle(1));
             button.setPrefSize(35,35);
             button.setStyle("-fx-background-color: grey");
+
         }
         if(pawn!=null &&pawn.getColor().equals(Color.NONE))
         {
@@ -68,12 +68,6 @@ public class BoardPane extends StackPane
             button.setShape(new Circle(1));
             button.setPrefSize(35,35);
             button.setStyle("-fx-background-color: White");
-        }
-        if(pawn!=null &&pawn.getColor().equals(Color.MUR))
-        {
-            button.setShape(new Circle(1));
-            button.setPrefSize(35,35);
-            button.setStyle("-fx-background-color: red");
         }
         return button;
     }
@@ -110,12 +104,12 @@ public class BoardPane extends StackPane
             }
         }
     }
+
     /**
      * Updates the game board by re-initializing it with the current state of the model.
      */
     public void update() {
         model.update();
-
         initBoard();
     }
 }
