@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: g55870.luckynumbers.model.BoardTest
+-------------------------------------------------------------------------------
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.163 s - in g55870.luckynumbers.model.BoardTest

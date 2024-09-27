@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="67f7d495-fc3f-4b93-ad52-8884820b9150" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/g55870/luckynumbers/model/Board.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:\IntelliJ IDEA 2020.2.3\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1pzH85ngSLYLsqMQ2z0fInay9MV" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunManager" selected="Application.LuckyNumbers">
+    <configuration name="Board" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="g55870.luckynumbers.model.Board" />
+      <module name="g55870.luckynumbers" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="g55870.luckynumbers.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LuckyNumbers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="g55870.luckynumbers.LuckyNumbers.LuckyNumbers" />
+      <module name="g55870.luckynumbers" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="g55870.luckynumbers.LuckyNumbers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BoardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="g55870.luckynumbers" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="g55870.luckynumbers.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="g55870.luckynumbers.model" />
+      <option name="MAIN_CLASS_NAME" value="g55870.luckynumbers.model.BoardTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BoardTest.canBePut_true_when_no_violated_rule_pos_free" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="g55870.luckynumbers" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="g55870.luckynumbers.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="g55870.luckynumbers.model" />
+      <option name="MAIN_CLASS_NAME" value="g55870.luckynumbers.model.BoardTest" />
+      <option name="METHOD_NAME" value="canBePut_true_when_no_violated_rule_pos_free" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="g55870.luckynumbers" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="g55870.luckynumbers.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="g55870.luckynumbers.model" />
+      <option name="MAIN_CLASS_NAME" value="g55870.luckynumbers.model.GameTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.LuckyNumbers" />
+        <item itemvalue="JUnit.GameTest" />
+        <item itemvalue="JUnit.BoardTest" />
+        <item itemvalue="JUnit.BoardTest.canBePut_true_when_no_violated_rule_pos_free" />
+        <item itemvalue="Application.Board" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="67f7d495-fc3f-4b93-ad52-8884820b9150" name="Default Changelist" comment="" />
+      <created>1616178837244</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1616178837244</updated>
+      <workItem from="1616178838727" duration="2839000" />
+      <workItem from="1616185033961" duration="13435000" />
+      <workItem from="1616250631895" duration="1754000" />
+      <workItem from="1616272284243" duration="12663000" />
+      <workItem from="1616340541565" duration="29295000" />
+      <workItem from="1616419660002" duration="7384000" />
+      <workItem from="1616442212878" duration="15784000" />
+      <workItem from="1616510577362" duration="6594000" />
+      <workItem from="1616524490326" duration="3476000" />
+      <workItem from="1616608188430" duration="16816000" />
+      <workItem from="1616685735095" duration="10532000" />
+      <workItem from="1616704514863" duration="15560000" />
+      <workItem from="1616784294113" duration="7481000" />
+      <workItem from="1617073508512" duration="2813000" />
+      <workItem from="1617109770854" duration="8940000" />
+      <workItem from="1617121807012" duration="14534000" />
+      <workItem from="1617193372785" duration="35499000" />
+      <workItem from="1617280306426" duration="30990000" />
+      <workItem from="1620111759247" duration="5123000" />
+      <workItem from="1620117300951" duration="588000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="770" y="0" key="#Java" timestamp="1616180656021">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="770" y="0" key="#Java/0.0.1536.824@0.0.1536.824" timestamp="1616180656021" />
+    <state x="93" y="93" width="1350" height="638" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1616718379549">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1536.824@0.0.1536.824" timestamp="1616718379549" />
+    <state x="460" y="193" key="#com.intellij.ide.util.MemberChooser" timestamp="1620115241008">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="460" y="193" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1620115241008" />
+    <state x="553" y="103" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1617123611612">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="553" y="103" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.1536.824@0.0.1536.824" timestamp="1617123611612" />
+    <state x="449" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1616272323081">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="449" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824@0.0.1536.824" timestamp="1616272323081" />
+    <state x="935" y="284" width="433" height="267" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1617154197097">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="935" y="284" width="433" height="267" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1617154197097" />
+    <state x="551" y="249" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog" timestamp="1617294444673">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="551" y="249" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog/0.0.1536.824@0.0.1536.824" timestamp="1617294444673" />
+    <state x="883" y="162" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1616711188163">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="883" y="162" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1536.824@0.0.1536.824" timestamp="1616711188163" />
+    <state width="438" height="462" key="DebuggerActiveHint" timestamp="1617308437410">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="438" height="462" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1617308437410" />
+    <state x="933" y="139" key="FileChooserDialogImpl" timestamp="1616180639340">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="933" y="139" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1616180639340" />
+    <state width="1493" height="252" key="GridCell.Tab.0.bottom" timestamp="1617315347958">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="252" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1617315347958" />
+    <state width="1493" height="252" key="GridCell.Tab.0.center" timestamp="1617315347958">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="252" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1617315347958" />
+    <state width="1493" height="252" key="GridCell.Tab.0.left" timestamp="1617315347958">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="252" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1617315347958" />
+    <state width="1493" height="252" key="GridCell.Tab.0.right" timestamp="1617315347958">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="252" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1617315347958" />
+    <state width="1493" height="252" key="GridCell.Tab.1.bottom" timestamp="1617315347958">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="252" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1617315347958" />
+    <state width="1493" height="252" key="GridCell.Tab.1.center" timestamp="1617315347958">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="252" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1617315347958" />
+    <state width="1493" height="252" key="GridCell.Tab.1.left" timestamp="1617315347958">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="252" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1617315347958" />
+    <state width="1493" height="252" key="GridCell.Tab.1.right" timestamp="1617315347958">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="252" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1617315347958" />
+    <state x="555" y="60" key="SettingsEditor" timestamp="1616184704057">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="555" y="60" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1616184704057" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1617073508517">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1617073508517" />
+    <state x="379" y="46" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1617236727215">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="379" y="46" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1617236727215" />
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1617314180169">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1617314180169" />
+    <state x="320" y="141" width="895" height="628" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1617136396192">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="320" y="141" width="895" height="628" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1536.824@0.0.1536.824" timestamp="1617136396192" />
+    <state x="242" y="28" width="1308" height="810" key="dock-window-1" timestamp="1620115118590">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="242" y="28" width="1308" height="810" key="dock-window-1/0.0.1536.824@0.0.1536.824" timestamp="1620115118590" />
+    <state x="762" y="0" width="781" height="830" maximized="true" key="dock-window-2" timestamp="1620115853864">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="762" y="0" width="781" height="830" maximized="true" key="dock-window-2/0.0.1536.824@0.0.1536.824" timestamp="1620115853864" />
+    <state x="499" y="187" key="extract.method.dialog" timestamp="1616620078646">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="187" key="extract.method.dialog/0.0.1536.824@0.0.1536.824" timestamp="1616620078646" />
+    <state x="862" y="0" width="579" height="824" key="find.popup" timestamp="1617112447702">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="862" y="0" width="579" height="824" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1617112447702" />
+    <state x="811" y="314" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1620116701067">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="811" y="314" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1536.824@0.0.1536.824" timestamp="1620116701067" />
+    <state x="810" y="189" width="672" height="677" key="run.anything.popup" timestamp="1620113622951">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="810" y="189" width="672" height="677" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1620113622951" />
+    <state x="814" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1617123283037">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="814" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1617123283037" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalStateException" package="java.lang" />
+          <option name="timeStamp" value="22" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/g55870/luckynumbers/model/BoardTest.java</url>
+          <line>149</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/g55870/luckynumbers/model/BoardTest.java</url>
+          <line>99</line>
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/g55870/luckynumbers/model/GameTest.java</url>
+          <line>30</line>
+          <properties class="g55870.luckynumbers.model.GameTest" method="start_when_game_over_ok">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
