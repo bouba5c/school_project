@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/image">
+        <file>images/background.png</file>
+        <file>images/backgroundGaming.jpg</file>
+        <file>images/But du jeu (1).png</file>
+        <file>images/GreenApple1.png</file>
+        <file>images/GreenApple2.png</file>
+        <file>images/GreenApple3.png</file>
+        <file>images/GreenApple5.png</file>
+        <file>images/picker.png</file>
+        <file>images/RedApple1.png</file>
+        <file>images/redApple2.png</file>
+        <file>images/RedApple3.png</file>
+        <file>images/redApple5.png</file>
+    </qresource>
+</RCC>

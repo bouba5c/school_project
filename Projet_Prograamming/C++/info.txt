@@ -1,0 +1,4 @@
+Structure: QMake
+Nom, prenom : Baldé Boubacar
+matricule : 55870
+Groupe : D221
